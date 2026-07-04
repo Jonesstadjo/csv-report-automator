@@ -1,0 +1,12 @@
+Product,Region,Sale Amount,Customer
+Widget A,North,150.00,John Smith
+Widget B,South,89.50,Jane Doe
+Widget A,North,150.00,John Smith
+,,,
+Widget C,East,245.00,
+Widget B,,110.00,Mike Johnson
+Widget A,West,175.50,Sarah Lee
+Widget D,South,52.00,Tom Brown
+Widget C,East,245.00,Lisa White
+,,,
+Widget B,North,95.00,Anna Davis
