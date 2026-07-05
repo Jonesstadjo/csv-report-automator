@@ -1,26 +1,31 @@
-# Ledger — Invoice Generator
+# CSV Report Automator
 
-A single-page web app for freelancers and small businesses to create and print professional invoices, live in the browser.
+A Python script that cleans messy CSV data and generates a clear, readable summary report — automatically.
 
 ## The problem it solves
 
-Freelancers and small business owners often just need a quick, clean way to generate an invoice without paying for bulky accounting software. This tool does exactly that: fill in a form, see a live invoice preview update instantly, and print or save it as a PDF.
+Businesses often export data from tools like Shopify, Google Forms, or a CRM, but the exports are messy: inconsistent formatting, missing values, duplicate rows. This tool cleans the data and produces a Markdown report with key statistics in seconds, ready to share with a team or client.
 
 ## What it does
 
-- Live-updating invoice preview as you type
-- Add/remove line items with automatic subtotal, tax, and total calculation
-- Draft / Paid status toggle
-- Print-ready layout (use the browser's Print > Save as PDF)
-- Fully responsive, no build step, no dependencies
+- Removes empty and duplicate rows
+- Calculates fill rate, unique values, and top values for every column
+- Automatically detects numeric columns and computes min / max / average / sum
+- Outputs a clean Markdown report and (optionally) the cleaned CSV
 
 ## Usage
 
-Just open `index.html` in any browser. No installation, no server needed.
+```bash
+python report_automator.py input.csv --output report.md --clean-csv cleaned.csv
+```
+
+## Example
+
+See `sample_sales_data.csv` (raw, messy input) and `sample_report.md` (the generated output) in this folder for a real example.
 
 ## Tech
 
-Vanilla HTML, CSS, and JavaScript — no frameworks, no build tools. Chosen deliberately to show clean, dependency-free front-end code that any client can drop into their own site or host as-is.
+Pure Python standard library — no dependencies to install.
 
 ## Author
 
