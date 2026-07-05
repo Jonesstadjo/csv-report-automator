@@ -25,7 +25,7 @@ See `sample_sales_data.csv` (raw, messy input) and `sample_report.md` (the gener
 
 ## Tech
 
-Pure Python standard library — no dependencies to install.
+Pure Python standard library  no dependencies to install.
 
 ## Author
 
